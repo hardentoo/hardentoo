@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>hardentoo</name>
+    <description lang="en">Hardentoo's Overlay</description>
+    <homepage>https://github.com/hardentoo/hardentoo</homepage>
+    <owner type="person">
+	<email>hardenedgentoo@gmail.com</email>
+	<name>hardentoo</name>
+    </owner>
+    <source type="git">git://github.com/hardentoo/hardentoo.git</source>
+    <feed>https://github.com/hardentoo/hardentoo/commits/master.atom</feed>
+  </repo>
+</repositories>
