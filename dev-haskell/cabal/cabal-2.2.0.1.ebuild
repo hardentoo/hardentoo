@@ -57,6 +57,9 @@ src_prepare() {
 
 	cabal_chdeps \
 		'tasty >= 1.0 && < 1.1' 'tasty >= 1.0'
+	
+	cabal_chdeps \
+		'unix  >= 2.5.1 && < 2.8' 'unix >= 2.5.1'
 }
 
 src_configure() {
