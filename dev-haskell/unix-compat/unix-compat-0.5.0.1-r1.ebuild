@@ -28,3 +28,10 @@ src_configure() {
 	haskell-cabal_src_configure \
 		$(cabal_flag old-time old-time)
 }
+
+src_prepare() {
+	default
+
+	cabal_chdeps \
+		'build-depends: unix >= 2.4 && < 2.8' 'build-depends: unix >= 2.4'
+}
