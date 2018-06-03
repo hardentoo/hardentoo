@@ -53,7 +53,7 @@ CABAL_CORE_LIB_GHC_PV="PM:8.4.2_rc1 PM:8.4.2 PM:8.4.3"
 
 PATCHES=("${FILESDIR}"/${PN}-2.0.0.2-no-bootstrap.patch)
 
-S="${WORKDIR}/${MY_P}"
+S="${WORKDIR}/${MY_P1}"
 
 src_prepare() {
 	default
