@@ -13,9 +13,12 @@ inherit haskell-cabal
 MY_PN="Cabal"
 MY_P="${MY_PN}-${PV}"
 
+PV1=2.2.0.1
+MY_P1="${MY_PN}-${PV1}"
+
 DESCRIPTION="A framework for packaging Haskell software"
 HOMEPAGE="http://www.haskell.org/cabal/"
-SRC_URI="mirror://hackage/packages/archive/${MY_PN}/${PV}/${MY_P}.tar.gz"
+SRC_URI="mirror://hackage/packages/archive/${MY_PN}/${PV1}/${MY_P1}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0/${PV}"
@@ -67,3 +70,5 @@ src_configure() {
 	haskell-cabal_src_configure \
 		--flag=-bundled-binary-generic
 }
+
+CABAL_CORE_LIB_GHC_PV="PM:8.4.2_rc1 PM:8.4.2 PM:8.4.3 PM:9999"
