@@ -30,3 +30,10 @@ DEPEND="${RDEPEND}
 		>=dev-haskell/test-framework-hunit-0.3 <dev-haskell/test-framework-hunit-0.4
 		>=dev-haskell/test-framework-quickcheck2-0.3 <dev-haskell/test-framework-quickcheck2-0.4 )
 "
+
+src_prepare() {
+	default
+
+	cabal_chdeps \
+		'template-haskell           >= 2.2      && < 2.14,' 'template-haskell           >= 2.2,'
+}
