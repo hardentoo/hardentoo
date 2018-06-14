@@ -33,7 +33,8 @@ src_prepare() {
 	default
 
 	cabal_chdeps \
-		'base >= 4.3 && < 4.12' 'base >= 4.3'
+		'base >= 4.3 && < 4.12' 'base >= 4.3' \
+		'build-depends:       base >= 4.3, hashable >= 1.1.1.0 && < 1.3, stm >= 2.2 && < 2.5' 'build-depends:       base >= 4.3, hashable >= 1.1.1.0 && < 1.3, stm >= 2.2'
 }
 
 src_configure() {
