@@ -18,9 +18,9 @@ SLOT="0/${PV}"
 KEYWORDS="amd64 ~ppc ~ppc64 ~sparc x86"
 IUSE=""
 
-RDEPEND=">=dev-haskell/hashable-1.1.1.0:=[profile?] <dev-haskell/hashable-1.3:=[profile?]
-	>=dev-haskell/stm-2.2:=[profile?] <dev-haskell/stm-2.5:=[profile?]
-	>=dev-lang/ghc-7.4.1:=
+RDEPEND=">=dev-haskell/hashable-1.1.1.0:=[profile?]
+	>=dev-haskell/stm-2.2:=[profile?]
+	>=dev-lang/ghc-8.4.3:=
 "
 DEPEND="${RDEPEND}
 	>=dev-haskell/cabal-1.10
